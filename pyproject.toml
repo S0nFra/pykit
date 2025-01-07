@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pykit"
+version = "0.1.0"
+description = "A collection of data structures and algorithms for Python"
+authors = [
+    {name = "Francesco Sonnessa", email = "sonnessa75@gmail.com"}
+]
+requires-python = ">=3.6"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["data structures", "algorithms", "collections"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Education",
+]
+
+[project.urls]
+Homepage = "https://github.com/S0nFra/pykit"
+# Documentation = "https://github.com/S0nFra/pykit/wiki"
+Repository = "https://github.com/S0nFra/pykit.git"
+Issues = "https://github.com/S0nFra/pykit/issues"
+
+[tool.setuptools]
+packages = ["pykit", "pykit.TdPCollections"]
+
+[tool.setuptools.package-data]
+pykit = ["TdPCollections/graphs/graph_example/*.txt"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.DS_Store"]
