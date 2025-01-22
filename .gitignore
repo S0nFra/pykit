@@ -1,4 +1,4 @@
 __pycache__
 
 build
-pytkit.egg-info
+*.egg-info
