@@ -43,4 +43,4 @@ pykit = ["TdPCollections/graphs/graph_example/*.txt"]
 "*" = ["*.DS_Store"]
 
 [project.scripts]
-pykit_pytorck_cheker = "pykit.scripts.pytorck_cheker"
+pykit_pytorck_checker = "pykit.scripts.pytorck_checker:main"

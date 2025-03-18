@@ -1,4 +1,4 @@
-if __name__ == "__main__":
+def main():
     import torch
 
     print("PyTorch",torch.__version__)
@@ -11,3 +11,6 @@ if __name__ == "__main__":
     if int(dev) > -1:
         print("Device link:",torch.cuda.device(0))
         print("Device name:",torch.cuda.get_device_name(0))
+
+if __name__ == "__main__":
+    main()
