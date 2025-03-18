@@ -41,3 +41,6 @@ pykit = ["TdPCollections/graphs/graph_example/*.txt"]
 
 [tool.setuptools.exclude-package-data]
 "*" = ["*.DS_Store"]
+
+[project.scripts]
+pykit_pytorck_cheker = "pykit.scripts.pytorck_cheker"
